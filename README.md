@@ -1,4 +1,4 @@
-                                                                       TASKER
+                                                          TASKER
 
 Tasker is basic task manager application where one can add, update, delete and mark tasks as complete.
 
@@ -39,6 +39,19 @@ To delete a task one can click on trashbin icon
 
 ![image](https://github.com/prakashbist28/tasker/assets/113052349/362bc834-d5ab-4d2b-8e73-aade6e0bcc3b)
 ![image](https://github.com/prakashbist28/tasker/assets/113052349/5ffebba1-6cbc-4daa-b381-9cca9d75539c)
+
+Completed Tasks:
+
+To mark tasks as completed mark the check box
+
+![image](https://github.com/prakashbist28/tasker/assets/113052349/1a2e449f-fb99-4af5-835b-2e77e7b49bae)
+
+
+Database:
+
+Added tasks along with their properties are stored in database
+
+![image](https://github.com/prakashbist28/tasker/assets/113052349/2f04b34f-ede8-4207-8ca7-e5caae23c892)
 
 
 

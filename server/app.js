@@ -9,7 +9,9 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:3000","https://tasker-fmr5.onrender.com"]
+}));
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,

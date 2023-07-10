@@ -80,9 +80,9 @@ function App() {
 
   const renderUpdateForm = () => (
     <form className="flex pt-6 pb-8 items-center justify-center h-[20px]" onSubmit={(e)=>{updateItem(e)}} >
-      <input className="p-3 w-[280px] bg-transparent text-white rounded-lg border-2 border-purple-500" type="text" placeholder="New Item" onChange={e=>{setUpdateItemText(e.target.value)}} value={updateItemText} />
+      <input className="p-3 w-[140px] md:w-[210px] lg:w-[280px] bg-transparent text-white rounded-lg border-2 border-purple-500" type="text" placeholder="New Item" onChange={e=>{setUpdateItemText(e.target.value)}} value={updateItemText} />
       <div className='pl-5'>
-            <button type='submit' className='p-2 rounded-xl border-2 border-purple bg-purple-900 text-white font-semibold uppercase text-[10px] w-[80px]' > update </button>
+            <button type='submit' className='p-2 rounded-xl border-2 border-purple bg-purple-900 text-white font-semibold uppercase text-[6px] md:text-[8px] lg:text-[10px] w-[40px] md:w-[60px] lg:w-[80px]' > update </button>
             </div>
     </form>
   )
@@ -94,8 +94,8 @@ function App() {
     <input className='p-3 w-full sm:w-[280px] bg-transparent text-white rounded-lg border-2 border-purple-500 mb-4 sm:mb-0 sm:mr-2' type="text" placeholder='Add Task' onChange={e => {setItemText(e.target.value)} } value={itemText} />
     <button type='submit' className='p-2 rounded-xl border-2 border-purple bg-purple-900 text-white font-semibold uppercase text-[10px] w-[80px] hover:bg-violet-100 hover:text-violet-800'> Add Task </button>
   </form>
-  <div className='rounded-lg p-10 bg-black/30 flex flex-col items-center border-2 border-white max-h-[70%] overflow-y-auto'>
-    <div className='pt-12 text-white text-xl sm:text-2xl font-bold hover:text-violet-400'>TASKS LIST</div>
+  <div className='rounded-lg w-[240px] md:w-[360px] lg:w-[480px] p-10 bg-black/30 flex flex-col items-center border-2 border-white max-h-[70%] overflow-y-auto'>
+    <div className=' text-white text-xl sm:text-2xl font-bold hover:text-violet-400'>TASKS LIST</div>
     <div className=" flex flex-col items-start mt-4">
         {
   listItems.map((item) => (
@@ -105,9 +105,9 @@ function App() {
           renderUpdateForm()
         ) : (
           <>
-          <div className='bg-purple-800 border-2 rounded-xl border-white hover:border-purple-400 hover:bg-black/20 pl-10 pr-10 pt-3 pb-3 flex items-center justify-between my-4 lg:w-[380px] w-[180px] '>
-          <div className='flex overflow-y-auto'>
-            <input className=' mr-1 ' type='checkbox' checked={item.completed} onChange={() => handleComplete(item._id)} />
+          <div className='bg-purple-800 border-2 rounded-xl border-white hover:border-purple-400 hover:bg-black/20 pl-2 pr-2 pt-3 pb-3 flex items-center justify-between my-4 lg:w-[380px] w-[180px] '>
+          <div className='flex overflow-y-auto items-start justify-between'>
+            <input className=' mr-1  ' type='checkbox' checked={item.completed} onChange={() => handleComplete(item._id)} />
             <p className={`mr-9 text-[8px] lg:text-[16px]  ${item.completed ? 'line-through text-black' : ''}  text-white font-bold ` }>{item.item}</p>
           </div>
 
